@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 public class PatternMatchingTest {
     public static void main(String[] args) {
         /**
-         * Declaração de uma string contendo um soneto.
+         * Declaração de uma “string” contendo um soneto.
          * Usada para demonstração de correspondência de padrões.
          * @author ChatGPT
          * @date 05/11/2025
@@ -34,27 +34,29 @@ public class PatternMatchingTest {
                 "To eat the world's due, by the grave and thee.";
 
         /**
-         * @date 05/11/2025
          * printa o char do index
+         * @author ChatGPT
+         * @date 05/11/2025
          */
         System.out.print(sonnet.charAt(158));
         System.out.print(sonnet.charAt(159));
         System.out.print(sonnet.charAt(160));
         /**
-         * @date 05/11/2025
          * Cria o padrão a ser procurado no modelo regex.
+         * @author ChatGPT
+         * @date 05/11/2025
          */
         Pattern pattern = Pattern.compile("\\bin\\b");
         /**
-         * @date 05/11/2025
          * Procura pelo padrão em uma CharSequence
          * e retorna uma "lista" com as CharSequences que corresponderam.
+         * @author ChatGPT
+         * @date 05/11/2025
          */
         Matcher matcher = pattern.matcher(sonnet);
 
         /**
-         * @date 05/11/2025
-         * varre a "lista de correspondencias" atribuindo o index inicial à variavel start,
+         * Varre a "lista de correspondencias" atribuindo o index inicial à variavel start,
          * atribuindo o index final à variavel end e
          * printa o padrão, o index inicial e o index final.
          */

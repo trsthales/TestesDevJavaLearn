@@ -8,9 +8,20 @@ package immutability;
  */
 public class TestingEnumOperation {
     public static void main(String[] args) {
+        /**
+         * Declaração de duas variáveis double para demonstração das operações.
+         * @author ChatGPT
+         * @date 05/10/2025
+         */
         final double a = 10;
         final double b = 5;
 
+        /**
+         * Realiza e printa o resultado das operações definidas no enum Operation.
+         * Também printa o ID de cada operação.
+         * @author ChatGPT
+         * @date 05/10/2025
+         */
         System.out.println("Addition: " + Operation.PLUS.evaluate(a, b) + " (Operation ID: " + Operation.PLUS.getOperationId() + ")");
         System.out.println("Subtraction: " + Operation.MINUS.evaluate(a, b) + " (Operation ID: " + Operation.MINUS.getOperationId() + ")");
         System.out.println("Multiplication: " + Operation.MULTIPLY.evaluate(a, b) + " (Operation ID: " + Operation.MULTIPLY.getOperationId() + ")");
