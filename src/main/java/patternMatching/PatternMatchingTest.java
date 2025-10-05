@@ -12,6 +12,12 @@ import java.util.regex.Pattern;
  */
 public class PatternMatchingTest {
     public static void main(String[] args) {
+        /**
+         * Declaração de uma string contendo um soneto.
+         * Usada para demonstração de correspondência de padrões.
+         * @author ChatGPT
+         * @date 05/11/2025
+         */
         String sonnet = "From fairest creatures we desire increase,\n" +
                 "That thereby beauty's rose might never die,\n" +
                 "But as the riper should by time decease\n" +
