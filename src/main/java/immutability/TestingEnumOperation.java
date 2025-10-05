@@ -1,5 +1,11 @@
 package immutability;
 
+/**
+ * Classe de teste para o enum Operation.
+ * Demonstra o uso das operações definidas no enum e exibe os seus ‘IDs’.
+ * @author ChatGPT
+ * @date 05/10/2025
+ */
 public class TestingEnumOperation {
     public static void main(String[] args) {
         final double a = 10;

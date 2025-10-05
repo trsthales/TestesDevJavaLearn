@@ -9,6 +9,7 @@ public class TestImmutableClass {
         originalArray[0] = 99;
 
         // Retrieve the values from the immutable object
+        int[] retrievedArray = immutableObject.values();
         int[] retrievedArray = immutableObject.getValues();
 
         // Print the values to verify immutability
