@@ -67,5 +67,43 @@ public class PatternMatchingTest {
             System.out.println("group: " + group + ", index start: " + start + "index end: " + end);
         }
     }
+    /**
+     * Método que verifica se o objeto é uma instância de CharSequence
+     * e, se for, imprime a mensagem com o comprimento da CharSequence.
+     * @param o Objeto a ser verificado.
+     * @author ChatGPT
+     * @date 05/11/2025
+     */
+    public void print(Object o) {
+        if (o instanceof CharSequence cs) {
+            System.out.print("This is a CharSequence of length " + cs.length());
+        }
+    }
+    /**
+     * Método que verifica se o objeto é uma instância de String
+     * e, se for, imprime a mensagem com o comprimento da String.
+     * @param o Objeto a ser verificado.
+     * @author ChatGPT
+     * @date 05/11/2025
+     */
+    public void printSLength(Object o) {
+        if (!(o instanceof String s)) {
+            return;
+        }
+        System.out.println("This is a String of length " + s.length());
+    }
 
+    /**
+     * Método que demonstra um exemplo de correspondência de padrão que sempre falha.
+     * Verifica se uma variável do tipo Double é uma instância de String,
+     * o que nunca será verdadeiro.
+     * @author ChatGPT
+     * @date 05/11/2025
+     */
+    public void matchFail() {
+        Double pi = Math.PI;
+//      if (pi instanceof String s) {
+//          this will never be true!
+//      }
+    }
 }
