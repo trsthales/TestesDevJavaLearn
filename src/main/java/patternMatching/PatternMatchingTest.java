@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
  * Classe de teste para correspondência de padrões usando expressões regulares.
  * Utiliza a classe Pattern e Matcher do pacote java.util.regex para encontrar
  * ocorrências de um padrão específico mum texto.
+ *
  * @author ChatGPT
  * @date 05/11/2025
  */
@@ -53,15 +54,17 @@ public class PatternMatchingTest {
          * printa o padrão, o index inicial e o index final.
          */
         while (matcher.find()) {
-            String group = matcher.group();
+            var group = matcher.group();
             int start = matcher.start();
             int end = matcher.end();
             System.out.println("group: " + group + ", index start: " + start + "index end: " + end);
         }
     }
+
     /**
      * Método que verifica se o objeto é uma instância de CharSequence
      * e, se for, imprime a mensagem com o comprimento da CharSequence.
+     *
      * @param o Objeto a ser verificado.
      */
     public void print(Object o) {
@@ -69,9 +72,11 @@ public class PatternMatchingTest {
             System.out.print("This is a CharSequence of length " + cs.length());
         }
     }
+
     /**
      * Método que verifica se o objeto é uma instância de String
      * e, se for, imprime a mensagem com o comprimento da String.
+     *
      * @param o Objeto a ser verificado.
      */
     public void printSLength(Object o) {
