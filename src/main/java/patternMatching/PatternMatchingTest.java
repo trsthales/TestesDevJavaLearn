@@ -15,8 +15,6 @@ public class PatternMatchingTest {
         /**
          * Declaração de uma “string” contendo um soneto.
          * Usada para demonstração de correspondência de padrões.
-         * @author ChatGPT
-         * @date 05/11/2025
          */
         String sonnet = "From fairest creatures we desire increase,\n" +
                 "That thereby beauty's rose might never die,\n" +
@@ -35,23 +33,17 @@ public class PatternMatchingTest {
 
         /**
          * printa o char do index
-         * @author ChatGPT
-         * @date 05/11/2025
          */
         System.out.print(sonnet.charAt(158));
         System.out.print(sonnet.charAt(159));
         System.out.print(sonnet.charAt(160));
         /**
          * Cria o padrão a ser procurado no modelo regex.
-         * @author ChatGPT
-         * @date 05/11/2025
          */
         Pattern pattern = Pattern.compile("\\bin\\b");
         /**
          * Procura pelo padrão em uma CharSequence
          * e retorna uma "lista" com as CharSequences que corresponderam.
-         * @author ChatGPT
-         * @date 05/11/2025
          */
         Matcher matcher = pattern.matcher(sonnet);
 
@@ -71,8 +63,6 @@ public class PatternMatchingTest {
      * Método que verifica se o objeto é uma instância de CharSequence
      * e, se for, imprime a mensagem com o comprimento da CharSequence.
      * @param o Objeto a ser verificado.
-     * @author ChatGPT
-     * @date 05/11/2025
      */
     public void print(Object o) {
         if (o instanceof CharSequence cs) {
@@ -83,8 +73,6 @@ public class PatternMatchingTest {
      * Método que verifica se o objeto é uma instância de String
      * e, se for, imprime a mensagem com o comprimento da String.
      * @param o Objeto a ser verificado.
-     * @author ChatGPT
-     * @date 05/11/2025
      */
     public void printSLength(Object o) {
         if (!(o instanceof String s)) {
@@ -97,8 +85,6 @@ public class PatternMatchingTest {
      * Método que demonstra um exemplo de correspondência de padrão que sempre falha.
      * Verifica se uma variável do tipo Double é uma instância de String,
      * o que nunca será verdadeiro.
-     * @author ChatGPT
-     * @date 05/11/2025
      */
     public void matchFail() {
         Double pi = Math.PI;
